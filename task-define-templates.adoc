@@ -30,7 +30,7 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 
 [role="quick-margin-para"]
-选择 * 应用模板 * 服务，单击 * 编辑器 * 选项卡，然后选择要在模板中使用的操作。
+选择*运行状况>修复*、单击*编辑器*选项卡、然后选择要在模板中使用的操作。
 
 [role="quick-margin-para"]
 按照创建步骤进行操作，并定义模板要执行的操作。
@@ -43,8 +43,8 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 * 如果您还没有 Connector ， https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["请参见如何创建连接器"^] 适用于 AWS ， Azure 和 GCP 。
 * 创建 Cloud Volumes ONTAP 卷模板时，请确保您的用户可以使用 Cloud Volumes ONTAP 工作环境。请参见如何在中启动 Cloud Volumes ONTAP 系统 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure 酒店"^]或中的 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["GCP"^]。
-* 创建内部 ONTAP 卷模板时，请确保您的用户可以使用内部 ONTAP 工作环境。请参见操作说明 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部部署的 ONTAP 系统"^] 在 Cloud Manager 中。
-* 创建 Azure NetApp Files 卷模板时，请确保您的用户可以使用 Azure NetApp Files 工作环境。请参见操作说明 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["创建 Azure NetApp Files 工作环境"^] 在 Cloud Manager 中。
+* 创建内部 ONTAP 卷模板时，请确保您的用户可以使用内部 ONTAP 工作环境。请参见操作说明 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部部署的 ONTAP 系统"^] 在BlueXP中。
+* 创建 Azure NetApp Files 卷模板时，请确保您的用户可以使用 Azure NetApp Files 工作环境。请参见操作说明 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["创建 Azure NetApp Files 工作环境"^] 在BlueXP中。
 * 如果您计划使用 Cloud Backup 备份模板中的卷，请确保您的环境已激活 Cloud Backup 。
 * 如果您计划使用 Cloud Data sense 扫描模板中的卷，请确保您的环境已激活 Cloud Data sense 。
 * 如果您计划在此模板中启用复制，并且此模板适用于内部 ONTAP 卷，则 ONTAP 集群必须具有活动的 SnapMirror 许可证。
@@ -75,7 +75,7 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 
 .步骤
-. 选择 * 应用模板 * 服务，单击 * 模板 * 选项卡，然后单击 * 添加新模板 * 。
+. 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
 +
 此时将显示 _Select_A Template_ 页面。
 
@@ -162,14 +162,14 @@ image:screenshot_create_template_add_action.png["显示可添加到已创建卷�
 . 在左上角输入用于 Databases* （本示例）的模板名称 * CVO volume 。
 . 单击 * 设置和偏移 * 以提供更详细的问题描述，以便可以将此模板与其他类似模板区分开，从而可以为整个模板启用偏移，然后单击 * 应用 * 。
 +
-通过 Drift ， Cloud Manager 可以监控您在创建此模板时为参数输入的硬编码值。
+通过Drift、BlueXP可以监控您在创建此模板时为参数输入的硬编码值。
 
 . 单击 * 保存模板 * 。
 
 
 此时将创建此模板，并将您返回到模板信息板，此时将显示新模板。
 
-请参见 <<What to do after you have created the template,您应该向用户介绍有关模板的信息>>。
+请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
 
 
 
@@ -180,7 +180,7 @@ image:screenshot_create_template_add_action.png["显示可添加到已创建卷�
 请参见 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes["如何配置 Azure NetApp Files 卷"^] 有关需要在 ANF 卷模板中完成的所有参数的详细信息。
 
 .步骤
-. 选择 * 应用模板 * 服务，单击 * 模板 * 选项卡，然后单击 * 添加新模板 * 。
+. 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
 +
 此时将显示 _Select_A Template_ 页面。
 
@@ -263,14 +263,14 @@ image:screenshot_create_template_define_action_anf.png["显示需要填写的空
 . 在左上方输入要用于模板的名称。
 . 单击 * 设置和偏移 * 以提供更详细的问题描述，以便可以将此模板与其他类似模板区分开，从而可以为整个模板启用偏移，然后单击 * 应用 * 。
 +
-通过 Drift ， Cloud Manager 可以监控您在创建此模板时为参数输入的硬编码值。
+通过Drift、BlueXP可以监控您在创建此模板时为参数输入的硬编码值。
 
 . 单击 * 保存模板 * 。
 
 
 此时将创建此模板，并将您返回到模板信息板，此时将显示新模板。
 
-请参见 <<What to do after you have created the template,您应该向用户介绍有关模板的信息>>。
+请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
 
 
 
@@ -279,7 +279,7 @@ image:screenshot_create_template_define_action_anf.png["显示需要填写的空
 请参见 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-for-ontap-clusters["如何配置内部 ONTAP 卷"^] 有关需要在内部部署 ONTAP 卷模板中完成的所有参数的详细信息。
 
 .步骤
-. 选择 * 应用模板 * 服务，单击 * 模板 * 选项卡，然后单击 * 添加新模板 * 。
+. 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
 +
 此时将显示 _Select_A Template_ 页面。
 
@@ -361,14 +361,14 @@ image:screenshot_create_template_define_action_onprem.png["显示需要填写的
 . 在左上方输入模板名称。
 . 单击 * 设置和偏移 * 以提供更详细的问题描述，以便可以将此模板与其他类似模板区分开，从而可以为整个模板启用偏移，然后单击 * 应用 * 。
 +
-通过 Drift ， Cloud Manager 可以监控您在创建此模板时为参数输入的硬编码值。
+通过Drift、BlueXP可以监控您在创建此模板时为参数输入的硬编码值。
 
 . 单击 * 保存模板 * 。
 
 
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见 <<What to do after you have created the template,您应该向用户介绍有关模板的信息>>。
+请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
 
 
 
@@ -386,7 +386,7 @@ image:screenshot_create_template_define_action_onprem.png["显示需要填写的
 请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws["如何在 AWS 中启动单节点 Cloud Volumes ONTAP 系统"^] 或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws["AWS 中的 Cloud Volumes ONTAP HA 对"^] 了解必须具备的前提条件，以及需要在此模板中定义的所有参数的详细信息。
 
 .步骤
-. 选择 * 应用模板 * 服务，单击 * 模板 * 选项卡，然后单击 * 添加新模板 * 。
+. 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
 +
 此时将显示 _Select_A Template_ 页面。
 
@@ -421,10 +421,10 @@ image:screenshot_create_template_cvo_env_aws1.png["屏幕截图显示了您需�
 | 凭据 | 这些是 Cloud Volumes ONTAP 集群管理员帐户的凭据。您可以使用这些凭据通过 ONTAP System Manager 或其 CLI 连接到 Cloud Volumes ONTAP 。 
 
 
-| 工作环境名称 | Cloud Manager 使用工作环境名称来命名 Cloud Volumes ONTAP 系统和 Amazon EC2 实例。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。单击字段并选择 5 个选项之一。您可以通过选择 * 自由文本 * 让管理员输入任何名称，也可以指定工作环境名称必须具有特定前缀或后缀，它包含 _ 个特定字符，或者它遵循您输入的正则表达式（ regex ）中的规则。 
+| 工作环境名称 | BlueXP使用工作环境名称来命名Cloud Volumes ONTAP 系统和Amazon EC2实例。如果您选择了预定义安全组的前缀，则它还会使用该名称作为前缀。单击字段并选择 5 个选项之一。您可以通过选择 * 自由文本 * 让管理员输入任何名称，也可以指定工作环境名称必须具有特定前缀或后缀，它包含 _ 个特定字符，或者它遵循您输入的正则表达式（ regex ）中的规则。 
 
 
-| Tags | AWS 标记是 AWS 资源的元数据。Cloud Manager 将这些标记添加到 Cloud Volumes ONTAP 实例以及与该实例关联的每个 AWS 资源。有关标记的信息，请参见 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS 文档：标记 Amazon EC2 资源"^]。 
+| Tags | AWS 标记是 AWS 资源的元数据。BlueXP会将标记添加到Cloud Volumes ONTAP 实例以及与该实例关联的每个AWS资源。有关标记的信息，请参见 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS 文档：标记 Amazon EC2 资源"^]。 
 |===
 . * 位置和连接 * ：输入您在中记录的网络信息 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#aws-network-information-worksheet["AWS 工作表"^]。其中包括 AWS 地区， VPC ，子网和安全组。
 +
@@ -449,18 +449,18 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 +
 如果模板值已正确完成，则会在 "Create work Environment in AWS （ single node ） " 框中添加一个绿色复选标记。
 
-. 您可能需要在此模板中添加另一项操作，以便为此工作环境创建卷。如果是，请单击 image:button_plus_sign_round.png["加号按钮"] 并添加该操作。请参见操作说明 <<Create a template for a Cloud Volumes ONTAP volume,为 Cloud Volumes ONTAP 卷创建模板>> 了解详细信息。
+. 您可能需要在此模板中添加另一项操作，以便为此工作环境创建卷。如果是，请单击 image:button_plus_sign_round.png["加号按钮"] 并添加该操作。请参见操作说明  a template for a Cloud Volumes ONTAP volume,为 Cloud Volumes ONTAP 卷创建模板 了解详细信息。
 . 在左上方输入模板名称。
 . 单击 * 设置和偏移 * 以提供更详细的问题描述，以便可以将此模板与其他类似模板区分开，从而可以为整个模板启用偏移，然后单击 * 应用 * 。
 +
-通过 Drift ， Cloud Manager 可以监控您在创建此模板时为参数输入的硬编码值。
+通过Drift、BlueXP可以监控您在创建此模板时为参数输入的硬编码值。
 
 . 单击 * 保存模板 * 。
 
 
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见 <<What to do after you have created the template,您应该向用户介绍有关模板的信息>>。
+请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
 
 
 
@@ -478,7 +478,7 @@ NOTE: 此时，您可以在 Cloud Volumes ONTAP ，内部 ONTAP 和 Azure NetApp
 通过当前的 _find existing resources_ 操作功能，您可以在 Cloud Volumes ONTAP 和内部 ONTAP 工作环境中查找当前未启用 Cloud Backup 或 Cloud Data sense 的卷。在特定卷上启用 Cloud Backup 时，此操作还会将您配置的备份策略设置为该工作环境的默认策略，以便这些工作环境中未来的所有卷都可以使用相同的备份策略。
 
 .步骤
-. 选择 * 应用模板 * 服务，单击 * 模板 * 选项卡，然后单击 * 添加新模板 * 。
+. 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
 +
 此时将显示 _Select_A Template_ 页面。
 
@@ -544,13 +544,13 @@ image:screenshot_define_find_resource_search_criteria.png["显示为查找现有
 +
 image:screenshot_template_add_backup_action.png["显示向模板添加 Cloud Backup 操作的步骤的屏幕截图。"]
 
-. 现在，您可以按中所述定义备份条件 <<Add Backup functionality to a volume,向卷添加备份功能>> 以便模板将正确的备份策略应用于从 _find existing resources_ 操作中选择的卷。
+. 现在，您可以按中所述定义备份条件  Backup functionality to a volume,向卷添加备份功能 以便模板将正确的备份策略应用于从 _find existing resources_ 操作中选择的卷。
 . 单击 * 应用 * 保存对备份操作所做的自定义设置，然后在完成后单击 * 保存模板 * 。
 
 
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见 <<What to do after you have created the template,您应该向用户介绍有关模板的信息>>。
+请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
 
 
 
@@ -559,7 +559,7 @@ image:screenshot_template_add_backup_action.png["显示向模板添加 Cloud Bac
 使用 _find existing resources_ 操作，您可以找到工作环境，然后使用其他模板操作（例如创建卷）轻松对现有工作环境执行操作。
 
 .步骤
-. 选择 * 应用模板 * 服务，单击 * 模板 * 选项卡，然后单击 * 添加新模板 * 。
+. 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
 +
 此时将显示 _Select_A Template_ 页面。
 
@@ -595,7 +595,7 @@ image:screenshot_define_find_work_env.png["屏幕截图显示了一个空白的 
 
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见 <<What to do after you have created the template,您应该向用户介绍有关模板的信息>>。
+请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-tags.html 
 keywords: tags, resource tags, volume tags, add tags, delete tags, view tags 
-summary: 您可以使用 Cloud Manager 标记服务查看，添加，修改和删除分配给现有资源的标记。这样，您就可以组织和简化资源管理。 
+summary: 您可以使用BlueXP标记服务查看、添加、修改和删除分配给现有资源的标记。这样，您就可以组织和简化资源管理。 
 ---
 = 管理资源的标记
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以使用 Cloud Manager 标记服务查看，添加，修改和�
 
 
 [role="lead"]
-您可以使用 Cloud Manager 标记服务查看，添加，修改和删除分配给现有资源的标记。这样，您就可以组织和简化资源管理。
+您可以使用BlueXP标记服务查看、添加、修改和删除分配给现有资源的标记。这样，您就可以组织和简化资源管理。
 
 
 
@@ -23,7 +23,7 @@ summary: 您可以使用 Cloud Manager 标记服务查看，添加，修改和�
 如果要查看具有特定标记或特定标记和标记键值的所有资源，可以搜索这些标记。您可以搜索所有资源，也可以仅搜索某些资源类别。
 
 .步骤
-. 选择 * 应用模板 * 服务，然后单击 * 标记 * 选项卡。
+. 选择*运行状况>修复*、然后单击*标记*选项卡。
 . 如有必要，请在 * 选择凭据 * 字段中选择特定云提供商的凭据。
 . 在 _Resource Type_ 字段中，选择资源，例如 * ONTAP ： CVO ： volume* 以搜索所有 Cloud Volumes ONTAP 卷。
 . 在 _Tag Key_ 字段中，选择标记，例如 * Env* ，以将搜索限制为带有 "Env" 标记的卷。

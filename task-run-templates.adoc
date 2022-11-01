@@ -32,7 +32,7 @@ summary: 选择您的组织为创建针对特定工作负载和应用程序优�
 
 
 [role="quick-margin-para"]
-选择 * 应用模板 * 服务，然后单击 * 模板 * 选项卡。
+选择*运行状况>修复*、然后单击*模板*选项卡。
 
 [role="quick-margin-para"]
 选择模板，单击 * 运行模板 * ，然后在可编辑字段中输入值以创建资源。
@@ -101,7 +101,7 @@ image:screenshot_run_template_from_canvas.png["屏幕截图显示了使用模板
 您可以从 _Templates Dashboard_ 向现有工作环境添加卷。
 
 .步骤
-. 选择 * 应用模板 * 服务，然后单击 * 模板 * 选项卡。
+. 选择*运行状况>修复*、然后单击*模板*选项卡。
 +
 此时将显示 _Templates Dashboard_ 。
 
@@ -130,7 +130,7 @@ image:screenshot_run_template_from_dashboard.png["屏幕截图显示了使用模
 如果您对创建工作环境所需的详细信息有任何疑问，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中启动 Cloud Volumes ONTAP"^]。
 
 .步骤
-. 选择 * 应用模板 * 服务，然后单击 * 模板 * 选项卡。
+. 选择*运行状况>修复*、然后单击*模板*选项卡。
 +
 此时将显示 _Templates Dashboard_ 。
 
@@ -154,7 +154,7 @@ image:screenshot_template_run_from_dashboard_we.png["屏幕截图显示了使用
 您可以运行一个模板来查找某些资源（例如卷），然后在这些资源（例如 Cloud Backup ）上启用云服务（前提是贵公司已使用此功能创建了一个模板）。运行此模板时，您可以进行一些小调整，以便仅将云服务应用于相应的资源。
 
 .步骤
-. 选择 * 应用模板 * 服务，然后单击 * 模板 * 选项卡。
+. 选择*运行状况>修复*、然后单击*模板*选项卡。
 +
 此时将显示 _Templates Dashboard_ 。
 
