@@ -24,16 +24,20 @@ summary: 选择您的组织为创建针对特定工作负载和应用程序优�
 
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
-.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] Alt-one"></span> 验证所需的前提条件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 验证所需的前提条件
+[role="quick-margin-list"]
 * 在使用模板为 Cloud Volumes ONTAP ，内部 ONTAP 或 Azure NetApp Files 系统创建卷之前，请确保您有权访问要部署此卷的适当工作环境。
 
 
+[role="quick-margin-list"]
 * 如果模板激活卷上的云服务，例如 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["云备份"^] 或 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["云数据感知"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 启动应用程序模板服务
 [role="quick-margin-para"]
 选择*运行状况>修复*、然后单击*模板*选项卡。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 通过运行模板并定义参数来构建资源
 [role="quick-margin-para"]
 选择模板，单击 * 运行模板 * ，然后在可编辑字段中输入值以创建资源。
 
@@ -175,6 +179,7 @@ image:screenshot_template_find_search_results.png["显示从查找资源搜索�
 
 
 
+.结果
 此模板将运行，并在您根据搜索条件检查的每个卷上启用 Cloud Backup 。
 
 任何错误都会显示在 _Running Your Template_ 页面中，您可以根据需要解决这些问题。

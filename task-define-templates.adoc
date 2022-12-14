@@ -22,16 +22,20 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
-.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] Alt-one"></span> 验证所需的前提条件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 验证所需的前提条件
+[role="quick-margin-list"]
 * 在用户使用模板为 Cloud Volumes ONTAP ，内部 ONTAP 或 Azure NetApp Files 系统创建卷之前，请确保他们能够访问要部署此卷的适当工作环境。
 
 
+[role="quick-margin-list"]
 * 如果您计划向模板添加云服务 " 操作 " ，例如 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["云备份"^] 或 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["云数据感知"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 启动应用程序模板服务
 [role="quick-margin-para"]
 选择*运行状况>修复*、单击*编辑器*选项卡、然后选择要在模板中使用的操作。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 通过选择 " 操作 " 并定义参数来构建模板
 [role="quick-margin-para"]
 按照创建步骤进行操作，并定义模板要执行的操作。
 
@@ -167,9 +171,10 @@ image:screenshot_create_template_add_action.png["显示可添加到已创建卷�
 . 单击 * 保存模板 * 。
 
 
+.结果
 此时将创建此模板，并将您返回到模板信息板，此时将显示新模板。
 
-请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
+请参见 <<创建模板后要执行的操作,您应该向用户介绍有关模板的信息>>。
 
 
 
@@ -268,9 +273,10 @@ image:screenshot_create_template_define_action_anf.png["显示需要填写的空
 . 单击 * 保存模板 * 。
 
 
+.结果
 此时将创建此模板，并将您返回到模板信息板，此时将显示新模板。
 
-请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
+请参见 <<创建模板后要执行的操作,您应该向用户介绍有关模板的信息>>。
 
 
 
@@ -366,9 +372,10 @@ image:screenshot_create_template_define_action_onprem.png["显示需要填写的
 . 单击 * 保存模板 * 。
 
 
+.结果
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
+请参见 <<创建模板后要执行的操作,您应该向用户介绍有关模板的信息>>。
 
 
 
@@ -449,7 +456,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 +
 如果模板值已正确完成，则会在 "Create work Environment in AWS （ single node ） " 框中添加一个绿色复选标记。
 
-. 您可能需要在此模板中添加另一项操作，以便为此工作环境创建卷。如果是，请单击 image:button_plus_sign_round.png["加号按钮"] 并添加该操作。请参见操作说明  a template for a Cloud Volumes ONTAP volume,为 Cloud Volumes ONTAP 卷创建模板 了解详细信息。
+. 您可能需要在此模板中添加另一项操作，以便为此工作环境创建卷。如果是，请单击 image:button_plus_sign_round.png["加号按钮"] 并添加该操作。请参见操作说明 <<为 Cloud Volumes ONTAP 卷创建模板,为 Cloud Volumes ONTAP 卷创建模板>> 了解详细信息。
 . 在左上方输入模板名称。
 . 单击 * 设置和偏移 * 以提供更详细的问题描述，以便可以将此模板与其他类似模板区分开，从而可以为整个模板启用偏移，然后单击 * 应用 * 。
 +
@@ -458,9 +465,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 . 单击 * 保存模板 * 。
 
 
+.结果
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
+请参见 <<创建模板后要执行的操作,您应该向用户介绍有关模板的信息>>。
 
 
 
@@ -544,13 +552,14 @@ image:screenshot_define_find_resource_search_criteria.png["显示为查找现有
 +
 image:screenshot_template_add_backup_action.png["显示向模板添加 Cloud Backup 操作的步骤的屏幕截图。"]
 
-. 现在，您可以按中所述定义备份条件  Backup functionality to a volume,向卷添加备份功能 以便模板将正确的备份策略应用于从 _find existing resources_ 操作中选择的卷。
+. 现在，您可以按中所述定义备份条件 <<向卷添加备份功能,向卷添加备份功能>> 以便模板将正确的备份策略应用于从 _find existing resources_ 操作中选择的卷。
 . 单击 * 应用 * 保存对备份操作所做的自定义设置，然后在完成后单击 * 保存模板 * 。
 
 
+.结果
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
+请参见 <<创建模板后要执行的操作,您应该向用户介绍有关模板的信息>>。
 
 
 
@@ -593,9 +602,10 @@ image:screenshot_define_find_work_env.png["屏幕截图显示了一个空白的 
 . 在左上方输入模板名称，然后单击 * 保存模板 *
 
 
+.结果
 此时将创建此模板，并将您返回到显示新模板的模板信息板。
 
-请参见  to do after you have created the template,您应该向用户介绍有关模板的信息。
+请参见 <<创建模板后要执行的操作,您应该向用户介绍有关模板的信息>>。
 
 
 
