@@ -182,7 +182,7 @@ image:screenshot_create_template_add_action.png["显示可添加到已创建卷�
 
 为 Azure NetApp Files 卷创建模板的方式与为 Cloud Volumes ONTAP 卷创建模板的方式相同。
 
-请参见 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes["如何配置 Azure NetApp Files 卷"^] 有关需要在 ANF 卷模板中完成的所有参数的详细信息。
+请参见 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes["如何配置 Azure NetApp Files 卷"^] 有关需要在 ANF 卷模板中完成的所有参数的详细信息。
 
 .步骤
 . 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
@@ -695,7 +695,7 @@ image:screenshot_template_replication_policy.png["用于定义关系的BlueXP复
 +
 .. 选择 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["复制策略"^] 要使用的。
 .. 选择一次性副本或重复复制计划。
-.. 如果希望偏移报告包含 SnapMirror 关系的复制运行状况以及滞后时间，状态和上次传输时间，请启用复制运行状况监控。 link:task-check-template-compliance.html#replication-health-details-in-the-drift-report["请在漂移报告中查看这种情况"]。
+.. 如果希望偏移报告包含 SnapMirror 关系的复制运行状况以及滞后时间，状态和上次传输时间，请启用复制运行状况监控。 link:task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report["请在漂移报告中查看这种情况"]。
 .. 选择是否要设置传输速率限制，然后输入可传输数据的最大速率（以 KB/ 秒为单位）。您可以输入一个固定值，也可以提供最小值和最大值，并让存储管理员在该范围内选择一个值。
 
 

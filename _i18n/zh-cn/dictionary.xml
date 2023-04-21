@@ -148,7 +148,6 @@
   <block id="0723f0287083e700309ab63bd37a0c33" category="section-title">为 Azure NetApp Files 卷创建模板</block>
   <block id="38c68ceb833297ed3631cc6cc44141ab" category="paragraph">为 Azure NetApp Files 卷创建模板的方式与为 Cloud Volumes ONTAP 卷创建模板的方式相同。</block>
   <block id="98165316f4a6a7eb3b2eea00a7c71656" category="inline-link">如何配置 Azure NetApp Files 卷</block>
-  <block id="1dcec9f35c7e20c4011388d6173a9a3e" category="paragraph">请参见<block ref="71642e13367a6341a10e13f459821e6e" category="inline-link-rx"></block> 有关需要在 ANF 卷模板中完成的所有参数的详细信息。</block>
   <block id="31ea9a5156da1667ca8c913660cb04e8" category="paragraph"><block ref="31ea9a5156da1667ca8c913660cb04e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1198c02b1425b74b6391ffd99cbc74b" category="list-text">选择 * 空白模板 * ，然后单击 * 开始使用 * 。</block>
   <block id="ddc839fd59d3af096b5f24caa0aac73e" category="list-text">选择 * 在 Azure NetApp Files 中创建卷 * 作为要创建的资源类型，然后单击 * 应用 * 。</block>
@@ -296,7 +295,6 @@
   <block id="23647b4aee667229f438bac6d37c6f14" category="list-text">选择<block ref="fce626f96b8a582bd914af9774e3f4bd" category="inline-link-rx"></block> 要使用的。</block>
   <block id="28b7ceda6afe52e7cddb056ae1cc1b42" category="list-text">选择一次性副本或重复复制计划。</block>
   <block id="a890fcd17657bbd0255d609a9ac66f87" category="inline-link-macro">请在漂移报告中查看这种情况</block>
-  <block id="550aba8dd2351fcca6220e9726d1b0b4" category="list-text">如果希望偏移报告包含 SnapMirror 关系的复制运行状况以及滞后时间，状态和上次传输时间，请启用复制运行状况监控。 <block ref="e9afe1d61d7f4e2024b782abd0cbb1af" category="inline-link-macro-rx"></block>。</block>
   <block id="a17ec67a32a0998705df91c25c3b8420" category="list-text">选择是否要设置传输速率限制，然后输入可传输数据的最大速率（以 KB/ 秒为单位）。您可以输入一个固定值，也可以提供最小值和最大值，并让存储管理员在该范围内选择一个值。</block>
   <block id="e03c4d2a8455ec2482acf1f509382257" category="section-title">创建模板后要执行的操作</block>
   <block id="856a9d1850ea33e764f9c6e201455be4" category="paragraph">创建模板后，您应通知存储管理员在创建新的工作环境和卷时使用此模板。</block>
@@ -774,7 +772,6 @@
   <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">偏移报告中的BlueXP复制运行状况详细信息</block>
   <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">使用模板在卷上启用BlueXP复制</block>
-  <block id="9dd134a3f05a90dc02c4af5ebcb3faef" category="paragraph">时间 <block ref="079d9da8cb6e56b01a7d0344b4200bdf" category="inline-link-macro-rx"></block>，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后、偏移报告将显示BlueXP复制关系的运行状况是运行状况良好还是运行状况不正常(偏移)、以及SnapMirror滞后时间、状态和上次传输时间。</block>
   <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">通过BlueXP修复服务(AppTemplate)、您可以标准化BlueXP工作环境的资源创建。</block>
   <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">BlueXP修复文档</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -849,4 +846,7 @@
   <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">使用BlueXP修复</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
   <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">向卷添加备份、分类或复制功能</block>
+  <block id="3c66700164b4cb085d6e086bf6b7d73b" category="paragraph">时间 <block ref="438903b5e6182d9d4cc41396268e5cbc" category="inline-link-macro-rx"></block>，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后、偏移报告将显示BlueXP复制关系的运行状况是运行状况良好还是运行状况不正常(偏移)、以及SnapMirror滞后时间、状态和上次传输时间。</block>
+  <block id="c28223c3f7a03804f44448c7561c5f02" category="paragraph">请参见<block ref="6525ab64efdc6d693874df3da6739f52" category="inline-link-rx"></block> 有关需要在 ANF 卷模板中完成的所有参数的详细信息。</block>
+  <block id="8abfe8e6c06581937c37ec49be54c6d7" category="list-text">如果希望偏移报告包含 SnapMirror 关系的复制运行状况以及滞后时间，状态和上次传输时间，请启用复制运行状况监控。 <block ref="1eb00ed04881df5d17ae6b01acb7f8fb" category="inline-link-macro-rx"></block>。</block>
 </blocks>

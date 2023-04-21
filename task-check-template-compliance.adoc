@@ -87,7 +87,7 @@ image:screenshot_template_drift_report_one_resource.png["单个资源的偏移�
 
 === 偏移报告中的BlueXP复制运行状况详细信息
 
-时间 link:task-define-templates.html#add-replication-functionality-to-a-volume["使用模板在卷上启用BlueXP复制"]，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后、偏移报告将显示BlueXP复制关系的运行状况是运行状况良好还是运行状况不正常(偏移)、以及SnapMirror滞后时间、状态和上次传输时间。
+时间 link:task-define-templates.html#add-bluexp-classification-functionality-to-a-volume["使用模板在卷上启用BlueXP复制"]，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后、偏移报告将显示BlueXP复制关系的运行状况是运行状况良好还是运行状况不正常(偏移)、以及SnapMirror滞后时间、状态和上次传输时间。
 
 此屏幕截图显示了偏移报告中运行状况不正常的 SnapMirror 关系的复制详细信息。
 
