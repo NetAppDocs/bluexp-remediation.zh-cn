@@ -57,18 +57,18 @@ image:screenshot_template_regex.png["使用正则表达式定义卷名称允许�
 
 == 在模板操作之间传递值
 
-模板可以使用先前操作中的信息在未来操作中填充字段。例如，在定义要启用 Cloud Backup 功能的卷的名称时，您可以指示备份操作使用在创建 Cloud Volumes ONTAP 操作中输入的存储管理员值作为卷的名称。
+模板可以使用先前操作中的信息在未来操作中填充字段。例如、在定义要启用BlueXP备份和恢复功能的卷的名称时、您可以指示备份操作使用存储管理员在创建Cloud Volumes ONTAP 操作中输入的值作为卷的名称。
 
-AppTemplate 服务可以使用三种类型的信息：
+BlueXP修复服务可以使用三种类型的信息：
 
 * 输入值—这是存储管理员在先前模板操作的字段中输入的实际值。
 * 输出值—这是BlueXP通过先前的模板操作创建资源后生成的值。
 * 输入您自己的值—这是您输入的值；不能通过模板中的先前操作访问它。
 
 
-例如、要对卷启用合规性扫描、Cloud Data sense服务需要存储管理员输入的"卷名称"(输入值)以及BlueXP在创建卷时生成的"卷uuid"(输出值)。
+例如、要对卷启用合规性扫描、BlueXP分类服务需要存储管理员输入的"卷名称"(输入值)和BlueXP在创建卷时生成的"卷uuid"(输出值)。
 
-下图显示了如何在模板的 " 云数据感知操作 " 部分中输入此信息。
+下图显示了如何在模板的BlueXP分类操作部分中输入此信息。
 
 image:screenshot_template_variable_input_output.png["显示如何使用在上一操作中输入的值在另一操作中填充字段的图示。"]
 
@@ -80,9 +80,9 @@ image:screenshot_template_variable_input_output.png["显示如何使用在上一
 
 image:screenshot_template_select_condition.png["有关如何在模板中添加条件语句的屏幕截图。"]
 
-例如，您可能有一条准则，即如果卷的容量大于 50 GB ，则需要在该卷上启用 Cloud Backup 。如果卷的容量较小，则不会启用 Cloud Backup 。您可以在模板中实施此功能，如下所示。
+例如、您可能有一个准则、即如果卷的容量大于50 GB、则需要在该卷上启用BlueXP备份和恢复。如果卷的容量较小、则不会启用BlueXP备份和恢复。您可以在模板中实施此功能，如下所示。
 
-image:screenshot_template_condition_example.png["屏幕截图显示了如何在模板中使用条件以有条件地启用 Cloud Backup 。"]
+image:screenshot_template_condition_example.png["显示如何在模板中使用条件有条件地启用BlueXP备份和恢复的屏幕截图。"]
 
 条件包括两部分：
 

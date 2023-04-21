@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-run-templates.html 
 keywords: templates, resource templates, services templates, volume templates, working environment templates 
-summary: 选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。您还可以通过模板在卷或现有卷上激活 Cloud Backup ， Cloud Data sense 和 Replication （ SnapMirror ）。 
+summary: '选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。此外、您还可以通过模板在卷或现有卷上激活BlueXP备份和恢复、BlueXP分类和BlueXP复制(SnapMirror)。' 
 ---
 = 使用模板创建或修改资源
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 选择您的组织为创建针对特定工作负载和应用程序优�
 
 
 [role="lead"]
-选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。您还可以通过模板激活 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["云备份"^]， https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["云数据感知"^]，和 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["复制（ SnapMirror ）"^] 在已创建的卷或现有卷上。
+选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。您还可以通过模板激活 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]，和 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^] 在已创建的卷或现有卷上。
 
 通过模板，您可以为 Cloud Volumes ONTAP ， Azure NetApp Files 和内部 ONTAP 系统创建卷。
 
@@ -30,7 +30,7 @@ summary: 选择您的组织为创建针对特定工作负载和应用程序优�
 
 
 [role="quick-margin-list"]
-* 如果模板激活卷上的云服务，例如 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["云备份"^] 或 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["云数据感知"^]，确保此服务在您的环境中处于活动状态并已获得许可。
+* 如果模板激活卷上的云服务，例如 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 或 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 启动应用程序模板服务
@@ -51,7 +51,7 @@ summary: 选择您的组织为创建针对特定工作负载和应用程序优�
 * 创建 Cloud Volumes ONTAP 卷时，请确保您有一个可用的 Cloud Volumes ONTAP 工作环境。
 * 创建内部 ONTAP 卷时，请确保您具有可用的内部 ONTAP 工作环境。
 * 创建 Azure NetApp Files 卷时，请确保您有一个可用的 Azure NetApp Files 工作环境。
-* 如果模板激活卷上的云服务，例如  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["云备份"^]， https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["云数据感知"^]或 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["复制（ SnapMirror ）"^]，确保此服务在您的环境中处于活动状态并已获得许可。
+* 如果模板激活卷上的云服务，例如  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]或 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
 
@@ -68,7 +68,7 @@ summary: 选择您的组织为创建针对特定工作负载和应用程序优�
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["如何配置 Cloud Volumes ONTAP 卷"^]
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["如何配置 Azure NetApp Files 卷"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-from-templates["如何配置内部 ONTAP 卷"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["如何配置内部 ONTAP 卷"^]
 
 
 
@@ -155,7 +155,7 @@ image:screenshot_template_run_from_dashboard_we.png["屏幕截图显示了使用
 
 == 选择并运行一个可查找现有资源的模板
 
-您可以运行一个模板来查找某些资源（例如卷），然后在这些资源（例如 Cloud Backup ）上启用云服务（前提是贵公司已使用此功能创建了一个模板）。运行此模板时，您可以进行一些小调整，以便仅将云服务应用于相应的资源。
+您可以运行一个模板来查找特定资源(例如卷)、然后在这些资源(例如BlueXP备份和恢复)上启用云服务(如果您的公司已使用此功能创建模板)。运行此模板时，您可以进行一些小调整，以便仅将云服务应用于相应的资源。
 
 .步骤
 . 选择*运行状况>修复*、然后单击*模板*选项卡。
@@ -173,13 +173,13 @@ image:screenshot_template_run_from_dashboard4.png["显示如何从模板信息�
 +
 image:screenshot_template_find_search_results.png["显示从查找资源搜索条件返回的卷的屏幕截图。"]
 
-. 如果结果符合您的预期，请使用模板的 _Enable Cloud Backup on Volume_ 部分中的条件选中要启用 Cloud Backup 的每个卷对应的复选框，然后单击 * 运行模板 * 。
+. 如果结果符合预期，请使用模板_启用卷上的云备份_部分中的标准选中要启用BlueXP备份和恢复的每个卷对应的复选框，然后单击*运行模板*。
 +
 如果结果与您的预期不同，请单击 image:screenshot_edit_icon.gif["编辑铅笔图标"] 在 _Search Criteria_ 旁边，进一步细化搜索范围。
 
 
 
 .结果
-此模板将运行，并在您根据搜索条件检查的每个卷上启用 Cloud Backup 。
+该模板将运行、并在您从搜索条件中检查的每个卷上启用BlueXP备份和恢复。
 
 任何错误都会显示在 _Running Your Template_ 页面中，您可以根据需要解决这些问题。

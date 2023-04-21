@@ -34,7 +34,7 @@ image:screenshot_template_drift_on_template.png["显示如何为模板启用偏�
 
 . 存储管理员运行此模板以创建卷。
 . 稍后，存储管理员将编辑卷并禁用 Snapshot 副本。
-. 您可以对所有模板运行偏移检查，并且 AppTemplates 服务会将 Snapshot 副本模板设置与卷中的当前设置进行比较。系统会标记任何不合规值，以便您可以修复不正确的设置。
+. 您可以对所有模板运行偏移检查、BlueXP修复服务会将Snapshot副本模板设置与卷中的当前设置进行比较。系统会标记任何不合规值，以便您可以修复不正确的设置。
 
 
 
@@ -43,7 +43,7 @@ image:screenshot_template_drift_on_template.png["显示如何为模板启用偏�
 
 Drift 信息板显示了使用模板创建的资源总数（例如卷），仍然符合模板的数量，不合规（偏离）的数量以及在禁用 Drift 的情况下创建的数量。
 
-image:screenshot_template_drift_dashboard.png["AppTemplates 服务的 Drift 信息板的屏幕截图。"]
+image:screenshot_template_drift_dashboard.png["BlueXP修复服务的Drift信息板的屏幕截图。"]
 
 * 通过每列顶部的控件，您可以按数字或字母顺序对结果进行排序。
 * 。 image:screenshot_plus_icon.gif[""] 用于按模板名称，偏移策略和状态以及操作类型筛选结果。例如：
@@ -85,9 +85,9 @@ image:screenshot_template_drift_report_one_resource.png["单个资源的偏移�
 
 
 
-=== 偏移报告中的复制运行状况详细信息
+=== 偏移报告中的BlueXP复制运行状况详细信息
 
-时间 link:task-define-templates.html#add-replication-functionality-to-a-volume["使用模板在卷上启用复制"]，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后，偏移报告将显示复制关系的运行状况是运行状况良好还是运行状况不正常（偏离），以及 SnapMirror 滞后时间，状态和上次传输时间。
+时间 link:task-define-templates.html#add-replication-functionality-to-a-volume["使用模板在卷上启用BlueXP复制"]，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后、偏移报告将显示BlueXP复制关系的运行状况是运行状况良好还是运行状况不正常(偏移)、以及SnapMirror滞后时间、状态和上次传输时间。
 
 此屏幕截图显示了偏移报告中运行状况不正常的 SnapMirror 关系的复制详细信息。
 

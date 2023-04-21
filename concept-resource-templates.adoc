@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-resource-templates.html 
 keywords: templates, overview, conceptual, resource templates, application templates, volume templates 
-summary: '通过AppTemplate服务、您可以在BlueXP中使工作环境中的资源创建标准化。例如，您可以在 " 卷模板 " 中硬编码所需的参数，存储管理员稍后使用该模板创建卷时会应用这些参数。这可能包括所需的磁盘类型，大小，协议，快照策略，云提供商， 等等。您还可以为每个创建的卷启用某些服务，例如 Cloud Backup 。' 
+summary: '通过BlueXP修复服务、您可以在BlueXP中对工作环境中的资源创建进行标准化。例如，您可以在 " 卷模板 " 中硬编码所需的参数，存储管理员稍后使用该模板创建卷时会应用这些参数。这可能包括所需的磁盘类型，大小，协议，快照策略，云提供商， 等等。您还可以为创建的每个卷启用某些服务、例如BlueXP备份和恢复。' 
 ---
-= 了解 AppTemplate
+= 了解BlueXP修复
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: '通过AppTemplate服务、您可以在BlueXP中使工作环境中的�
 
 
 [role="lead"]
-通过AppTemplate服务、您可以在BlueXP (以前称为Cloud Manager)的工作环境中标准化资源创建。例如，您可以在 " 卷模板 " 中硬编码所需的参数，存储管理员稍后使用该模板创建卷时会应用这些参数。这可能包括所需的磁盘类型，大小，协议，快照策略，云提供商， 等等。您还可以为每个创建的卷启用某些服务，例如 Cloud Backup 。
+通过BlueXP修复服务、您可以在BlueXP中对工作环境中的资源创建进行标准化。例如，您可以在 " 卷模板 " 中硬编码所需的参数，存储管理员稍后使用该模板创建卷时会应用这些参数。这可能包括所需的磁盘类型，大小，协议，快照策略，云提供商， 等等。您还可以为创建的每个卷启用某些服务、例如BlueXP备份和恢复。
 
 通过模板，存储管理员可以轻松创建针对每个已部署应用程序（例如数据库，电子邮件或流式服务）的工作负载要求进行优化的卷。而且，由于每个卷都是为每个应用程序创建的，因此存储架构师可以更加轻松地使用它。
 
@@ -22,10 +22,10 @@ summary: '通过AppTemplate服务、您可以在BlueXP中使工作环境中的�
 
 == 功能
 
-AppTemplate 具有以下功能和优势：
+BlueXP修复具有以下功能和优势：
 
 * 自动化并改进基础架构的设计和开发
-* 提供一个位置来激活不同的 NetApp 云服务，例如 Cloud Backup 和 Cloud Data sense
+* 提供一个位置来激活不同的NetApp云服务；例如BlueXP备份和恢复以及BlueXP分类
 * 确定已更改且不再符合模板的资源（使用 " 偏移 " 功能）
 +
 此时、您需要手动进行调整、以使资源恢复与模板的合规性。 link:task-check-template-compliance.html["了解有关漂移的更多信息"]。
@@ -49,20 +49,20 @@ AppTemplate 具有以下功能和优势：
 
 * 服务操作： *
 
-* 激活 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["云备份"^] 在卷上（不适用于 Azure NetApp Files ）
-* 激活 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["云数据感知"^] 在卷上
-* 激活 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replication"^] 在卷上（不适用于 Azure NetApp Files ）
+* 激活 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 在卷上（不适用于 Azure NetApp Files ）
+* 激活 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^] 在卷上
+* 激活 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^] 在卷上（不适用于 Azure NetApp Files ）
 
 
-例如，您可以创建一个用于创建 Cloud Volumes ONTAP 卷的模板。或者，创建 Cloud Volumes ONTAP 卷，然后在该卷上启用 Cloud Backup 。或者创建 Cloud Volumes ONTAP 卷，然后在该卷上启用 Cloud Backup_and_ Cloud Data sense 。
+例如，您可以创建一个用于创建 Cloud Volumes ONTAP 卷的模板。或者创建Cloud Volumes ONTAP 卷、然后在该卷上启用BlueXP备份和恢复。或者创建Cloud Volumes ONTAP 卷、然后在该卷上启用BlueXP备份和恢复_and_ BlueXP分类。
 
 NetApp 将随着时间的推移添加更多操作。
 
 
 
-== AppTemplate的工作原理
+== BlueXP修复的工作原理
 
-AppTemplate 服务由 3 个部分组成。可用模板 " 操作 " ，自定义应用程序模板以及因运行此模板而部署的资源。下图显示了每个组件之间的关系：
+BlueXP修复服务由3部分组成。可用模板 " 操作 " ，自定义应用程序模板以及因运行此模板而部署的资源。下图显示了每个组件之间的关系：
 
 image:diagram_template_flow1.png["创建和使用应用程序模板所涉及的不同用户的示意图。"]
 
@@ -87,15 +87,15 @@ image:diagram_template_flow1.png["创建和使用应用程序模板所涉及的�
 
 == 定价和许可证
 
-AppTemplate功能无需许可、所有BlueXP用户均可免费使用。
+BlueXP修复功能无需许可、可供所有BlueXP用户免费使用。
 
 
-NOTE: 通过模板，您可以将云服务应用于已创建的资源，例如，在每个卷上启用 Cloud Backup 。在这种情况下，使用备份服务以及备份文件所使用的对象存储空间需要付费。
+NOTE: 通过模板、您可以将云服务应用于已创建的资源、例如、在每个卷上启用BlueXP备份和恢复。在这种情况下，使用备份服务以及备份文件所使用的对象存储空间需要付费。
 
 
 
 == 限制
 
-* 任何 Gov Cloud 地区或无法访问 Internet 的站点均不支持 AppTemplate 服务。
+* 任何Gov Cloud地区或无法访问Internet的站点均不支持BlueXP修复服务。
 * 您不能使用模板在现有聚合上创建 Cloud Volumes ONTAP 卷。新卷将在新聚合中创建。
 
