@@ -28,7 +28,7 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 
 [role="quick-margin-list"]
-* 如果您计划向模板添加云服务 " 操作 " ，例如 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 或 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]，确保此服务在您的环境中处于活动状态并已获得许可。
+* 如果您计划向模板添加云服务 " 操作 " ，例如 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 或 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 启动应用程序模板服务
@@ -45,10 +45,10 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 请阅读以下要求，以确保您的配置受支持。
 
-* 如果您还没有 Connector ， https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["请参见如何创建连接器"^] 适用于 AWS ， Azure 和 GCP 。
-* 创建 Cloud Volumes ONTAP 卷模板时，请确保您的用户可以使用 Cloud Volumes ONTAP 工作环境。请参见如何在中启动 Cloud Volumes ONTAP 系统 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Azure 酒店"^]或中的 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["GCP"^]。
-* 创建内部 ONTAP 卷模板时，请确保您的用户可以使用内部 ONTAP 工作环境。请参见操作说明 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部部署的 ONTAP 系统"^] 在BlueXP中。
-* 创建 Azure NetApp Files 卷模板时，请确保您的用户可以使用 Azure NetApp Files 工作环境。请参见操作说明 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["创建 Azure NetApp Files 工作环境"^] 在BlueXP中。
+* 如果您还没有 Connector ， https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["请参见如何创建连接器"^] 适用于 AWS ， Azure 和 GCP 。
+* 创建 Cloud Volumes ONTAP 卷模板时，请确保您的用户可以使用 Cloud Volumes ONTAP 工作环境。请参见如何在中启动 Cloud Volumes ONTAP 系统 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws.html["AWS"^]， https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Azure 酒店"^]或中的 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-gcp.html["GCP"^]。
+* 创建内部 ONTAP 卷模板时，请确保您的用户可以使用内部 ONTAP 工作环境。请参见操作说明 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["发现内部部署的 ONTAP 系统"^] 在BlueXP中。
+* 创建 Azure NetApp Files 卷模板时，请确保您的用户可以使用 Azure NetApp Files 工作环境。请参见操作说明 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["创建 Azure NetApp Files 工作环境"^] 在BlueXP中。
 * 如果您计划使用BlueXP备份和恢复来备份模板中的卷、请确保您的环境已激活BlueXP备份和恢复。
 * 如果您计划使用BlueXP分类来扫描模板中的卷、请确保您的环境已激活BlueXP分类。
 * 如果您计划在模板中启用BlueXP复制、并且该模板适用于内部ONTAP 卷、则ONTAP 集群必须具有有效的SnapMirror许可证。
@@ -64,7 +64,7 @@ summary: '选择 NetApp 提供的一个或多个 " 操作 " ，然后快速构�
 
 === 为 Cloud Volumes ONTAP 卷创建模板
 
-请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["如何配置 Cloud Volumes ONTAP 卷"^] 有关需要在 Cloud Volumes ONTAP 卷模板中完成的所有参数的详细信息。
+请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html["如何配置 Cloud Volumes ONTAP 卷"^] 有关需要在 Cloud Volumes ONTAP 卷模板中完成的所有参数的详细信息。
 
 在此示例中，我们将创建一个名为 "CVO volume for databases" 的模板，其中包括以下 2 项操作：
 
@@ -150,7 +150,7 @@ image:screenshot_create_template_define_action_cvo.png["显示您需要填写的
 |===
 . * 分层： * 选择要应用于卷的分层策略，如果不希望将此卷中的冷数据分层到对象存储，则将此策略设置为 " 无 " 。
 +
-请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html#volume-tiering-policies["卷分层策略"^] 有关概述，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["将非活动数据分层到对象存储"^] 以确保您的环境已设置为分层。
+请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#volume-tiering-policies["卷分层策略"^] 有关概述，请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["将非活动数据分层到对象存储"^] 以确保您的环境已设置为分层。
 
 . 定义完此操作所需的参数后，单击 * 应用 * 。
 +
@@ -182,7 +182,7 @@ image:screenshot_create_template_add_action.png["显示可添加到已创建卷�
 
 为 Azure NetApp Files 卷创建模板的方式与为 Cloud Volumes ONTAP 卷创建模板的方式相同。
 
-请参见 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes["如何配置 Azure NetApp Files 卷"^] 有关需要在 ANF 卷模板中完成的所有参数的详细信息。
+请参见 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html#create-volumes["如何配置 Azure NetApp Files 卷"^] 有关需要在 ANF 卷模板中完成的所有参数的详细信息。
 
 .步骤
 . 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
@@ -282,7 +282,7 @@ image:screenshot_create_template_define_action_anf.png["显示需要填写的空
 
 === 为内部 ONTAP 卷创建模板
 
-请参见 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes["如何配置内部 ONTAP 卷"^] 有关需要在内部部署 ONTAP 卷模板中完成的所有参数的详细信息。
+请参见 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html#create-volumes["如何配置内部 ONTAP 卷"^] 有关需要在内部部署 ONTAP 卷模板中完成的所有参数的详细信息。
 
 .步骤
 . 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
@@ -390,7 +390,7 @@ image:screenshot_create_template_define_action_onprem.png["显示需要填写的
 
 
 ====
-请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws["如何在 AWS 中启动单节点 Cloud Volumes ONTAP 系统"^] 或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws["AWS 中的 Cloud Volumes ONTAP HA 对"^] 了解必须具备的前提条件，以及需要在此模板中定义的所有参数的详细信息。
+请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws["如何在 AWS 中启动单节点 Cloud Volumes ONTAP 系统"^] 或 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws["AWS 中的 Cloud Volumes ONTAP HA 对"^] 了解必须具备的前提条件，以及需要在此模板中定义的所有参数的详细信息。
 
 .步骤
 . 选择*运行状况>修复*、单击*模板*选项卡、然后单击*添加新模板*。
@@ -433,7 +433,7 @@ image:screenshot_create_template_cvo_env_aws1.png["屏幕截图显示了您需�
 
 | Tags | AWS 标记是 AWS 资源的元数据。BlueXP会将标记添加到Cloud Volumes ONTAP 实例以及与该实例关联的每个AWS资源。有关标记的信息，请参见 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS 文档：标记 Amazon EC2 资源"^]。 
 |===
-. * 位置和连接 * ：输入您在中记录的网络信息 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS 工作表"^]。其中包括 AWS 地区， VPC ，子网和安全组。
+. * 位置和连接 * ：输入您在中记录的网络信息 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS 工作表"^]。其中包括 AWS 地区， VPC ，子网和安全组。
 +
 如果您有 AWS 前台，则可以通过选择前台 VPC 在该前台部署单节点 Cloud Volumes ONTAP 系统。体验与 AWS 中的任何其他 VPC 相同。
 
@@ -443,11 +443,11 @@ image:screenshot_create_template_cvo_env_aws1.png["屏幕截图显示了您需�
 对于 AWS 管理的加密，您可以从您的帐户或其他 AWS 帐户中选择其他客户主密钥（ CMK ）。
 
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html["了解如何为 Cloud Volumes ONTAP 设置 AWS KMS"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["了解如何为 Cloud Volumes ONTAP 设置 AWS KMS"^]。
 
 . * 充电方法 * ：指定要在此系统中使用的充电选项。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-aws.html["了解这些充电方法"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-licensing-aws.html["了解这些充电方法"^]。
 
 . * NetApp 支持站点帐户 * ：选择一个 NetApp 支持站点帐户。
 . * 预配置软件包 * ：从四个预配置软件包中选择一个，该软件包将确定在工作环境中创建的卷的多个因素。
@@ -617,7 +617,7 @@ image:screenshot_define_find_work_env.png["屏幕截图显示了一个空白的 
 
 === 向卷添加备份功能
 
-创建卷模板时，您可以使用在模板中添加要定期创建卷备份的模板 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 服务
+创建卷模板时，您可以使用在模板中添加要定期创建卷备份的模板 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 服务
 
 
 TIP: 此操作不适用于 Azure NetApp Files 卷。
@@ -636,7 +636,7 @@ image:screenshot_template_backup.png["页面的屏幕截图，用于为卷启用
 
 === 向卷添加BlueXP分类功能
 
-创建卷模板时，您可以使用在模板中添加要扫描卷的合规性和分类的内容 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^] 服务
+创建卷模板时，您可以使用在模板中添加要扫描卷的合规性和分类的内容 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"^] 服务
 
 image:screenshot_template_data_sense.png["页面的屏幕截图，用于为卷启用扫描功能。"]
 
@@ -651,7 +651,7 @@ image:screenshot_template_data_sense.png["页面的屏幕截图，用于为卷�
 
 === 向卷添加BlueXP复制功能
 
-创建卷模板时，您可以使用在模板中添加要将卷中的数据复制到另一个卷的数据 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^] 服务您可以将数据复制到 Cloud Volumes ONTAP 集群或内部 ONTAP 集群。
+创建卷模板时，您可以使用在模板中添加要将卷中的数据复制到另一个卷的数据 https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXP复制"^] 服务您可以将数据复制到 Cloud Volumes ONTAP 集群或内部 ONTAP 集群。
 
 
 TIP: 此操作不适用于 Azure NetApp Files 卷。
@@ -693,7 +693,7 @@ image:screenshot_template_replication_dest.png["用于定义BlueXP复制目标�
 image:screenshot_template_replication_policy.png["用于定义关系的BlueXP复制设置的页面的屏幕截图。"]
 
 +
-.. 选择 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["复制策略"^] 要使用的。
+.. 选择 https://docs.netapp.com/us-en/bluexp-replication/concept-replication-policies.html#types-of-replication-policies["复制策略"^] 要使用的。
 .. 选择一次性副本或重复复制计划。
 .. 如果希望偏移报告包含 SnapMirror 关系的复制运行状况以及滞后时间，状态和上次传输时间，请启用复制运行状况监控。 link:task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report["请在漂移报告中查看这种情况"]。
 .. 选择是否要设置传输速率限制，然后输入可传输数据的最大速率（以 KB/ 秒为单位）。您可以输入一个固定值，也可以提供最小值和最大值，并让存储管理员在该范围内选择一个值。

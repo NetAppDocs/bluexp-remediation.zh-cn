@@ -14,7 +14,7 @@ summary: '选择您的组织为创建针对特定工作负载和应用程序优�
 
 
 [role="lead"]
-选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。您还可以通过模板激活 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]，和 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^] 在已创建的卷或现有卷上。
+选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。您还可以通过模板激活 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"^]，和 https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXP复制"^] 在已创建的卷或现有卷上。
 
 通过模板，您可以为 Cloud Volumes ONTAP ， Azure NetApp Files 和内部 ONTAP 系统创建卷。
 
@@ -30,7 +30,7 @@ summary: '选择您的组织为创建针对特定工作负载和应用程序优�
 
 
 [role="quick-margin-list"]
-* 如果模板激活卷上的云服务，例如 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 或 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]，确保此服务在您的环境中处于活动状态并已获得许可。
+* 如果模板激活卷上的云服务，例如 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 或 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 启动应用程序模板服务
@@ -47,11 +47,11 @@ summary: '选择您的组织为创建针对特定工作负载和应用程序优�
 
 请阅读以下要求，以确保您的配置受支持。
 
-* 如果您还没有 Connector ， https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["请参见如何创建连接器"^] 适用于 AWS ， Azure 和 GCP 。
+* 如果您还没有 Connector ， https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["请参见如何创建连接器"^] 适用于 AWS ， Azure 和 GCP 。
 * 创建 Cloud Volumes ONTAP 卷时，请确保您有一个可用的 Cloud Volumes ONTAP 工作环境。
 * 创建内部 ONTAP 卷时，请确保您具有可用的内部 ONTAP 工作环境。
 * 创建 Azure NetApp Files 卷时，请确保您有一个可用的 Azure NetApp Files 工作环境。
-* 如果模板激活卷上的云服务，例如  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^]或 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^]，确保此服务在您的环境中处于活动状态并已获得许可。
+* 如果模板激活卷上的云服务，例如  https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^]， https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"^]或 https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXP复制"^]，确保此服务在您的环境中处于活动状态并已获得许可。
 
 
 
@@ -66,9 +66,9 @@ summary: '选择您的组织为创建针对特定工作负载和应用程序优�
 
 无论选择哪种方法，您都可以在以下部分中查看有关必须定义的所需卷参数的详细信息：
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["如何配置 Cloud Volumes ONTAP 卷"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["如何配置 Azure NetApp Files 卷"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["如何配置内部 ONTAP 卷"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["如何配置 Cloud Volumes ONTAP 卷"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["如何配置 Azure NetApp Files 卷"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["如何配置内部 ONTAP 卷"^]
 
 
 
@@ -131,7 +131,7 @@ image:screenshot_run_template_from_dashboard.png["屏幕截图显示了使用模
 
 如果贵公司已为此功能创建了模板，则可以从 _Templates Dashboard_ 创建新的工作环境。
 
-如果您对创建工作环境所需的详细信息有任何疑问，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中启动 Cloud Volumes ONTAP"^]。
+如果您对创建工作环境所需的详细信息有任何疑问，请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中启动 Cloud Volumes ONTAP"^]。
 
 .步骤
 . 选择*运行状况>修复*、然后单击*模板*选项卡。

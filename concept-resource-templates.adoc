@@ -49,9 +49,9 @@ BlueXP修复具有以下功能和优势：
 
 * 服务操作： *
 
-* 激活 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 在卷上（不适用于 Azure NetApp Files ）
-* 激活 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP分类"^] 在卷上
-* 激活 https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXP复制"^] 在卷上（不适用于 Azure NetApp Files ）
+* 激活 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXP备份和恢复"^] 在卷上（不适用于 Azure NetApp Files ）
+* 激活 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"^] 在卷上
+* 激活 https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXP复制"^] 在卷上（不适用于 Azure NetApp Files ）
 
 
 例如，您可以创建一个用于创建 Cloud Volumes ONTAP 卷的模板。或者创建Cloud Volumes ONTAP 卷、然后在该卷上启用BlueXP备份和恢复。或者创建Cloud Volumes ONTAP 卷、然后在该卷上启用BlueXP备份和恢复_and_ BlueXP分类。
