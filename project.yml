@@ -47,50 +47,6 @@ sidebar:
       url: "/task-get-help.html"
   - title: 法律声明
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 入门
-    links:
-    - title: 了解BlueXP修复
-      url: concept-resource-templates.html
-    - title: 了解标记
-      url: concept-tagging.html
-    - title: 新增功能
-      url: whats-new.html
-  - title: 创建模板
-    links:
-    - title: Cloud Volumes ONTAP 工作环境
-      url: task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment
-    - title: Cloud Volumes ONTAP 卷
-      url: task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-volume
-    - title: Azure NetApp Files 卷
-      url: task-define-templates.html#create-a-template-for-an-azure-netapp-files-volume
-    - title: 内部 ONTAP 卷
-      url: task-define-templates.html#create-a-template-for-an-on-premises-ontap-volume
-    - title: 向卷添加备份、分类或复制功能
-      url: task-define-templates.html#examples-of-enabling-services-using-templates
-  - title: 使用模板创建资源
-    links:
-    - title: Cloud Volumes ONTAP 工作环境
-      url: task-run-templates.html#select-and-run-a-working-environment-template
-    - title: CVO ，内部和 ANF 的卷
-      url: task-run-templates.html#select-and-run-a-volume-template
-  - title: 使用模板和标记管理资源
-    links:
-    - title: 检查资源的模板合规性（偏差）
-      url: task-check-template-compliance.html
-    - title: 运行一个可查找现有资源的模板
-      url: task-run-templates.html#select-and-run-a-template-that-finds-existing-resources
-    - title: 管理资源的标记
-      url: task-using-tags.html
-  - title: 博客社区
-    links:
-    - title: NetApp 社区
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP博客
-      url: https://bluexp.netapp.com/blog
-    - title: 云网络研讨会
-      url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family

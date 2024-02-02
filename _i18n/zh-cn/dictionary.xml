@@ -530,20 +530,6 @@
   <block id="4a37630008b707a26bac4e9b9d2d91bc" category="sidebar">使用标记对资源进行组织</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
-  <block id="35f98b47133ad8954f63b25aef2dad3a" category="sidebar">了解标记</block>
-  <block id="12b8ed36a576a6d4769c8d350b438a8a" category="sidebar">创建模板</block>
-  <block id="59cccee54a9c1422dca33d7662d37b76" category="sidebar">Cloud Volumes ONTAP 工作环境</block>
-  <block id="f829fef4575b38109cd246bafbd6718e" category="sidebar">Cloud Volumes ONTAP 卷</block>
-  <block id="217aec976bd66d37571f1fe0e44a4e77" category="sidebar">Azure NetApp Files 卷</block>
-  <block id="21dc3aafb4a3e393dccd900e9ba42118" category="sidebar">内部 ONTAP 卷</block>
-  <block id="c8ca3079f96c0e324b876d7055a67c46" category="sidebar">使用模板创建资源</block>
-  <block id="70deba7f047a2bcc0d20e5ef94a2abf8" category="sidebar">CVO ，内部和 ANF 的卷</block>
-  <block id="f8de1ec8d7766950989e3205a63d91d9" category="sidebar">使用模板和标记管理资源</block>
-  <block id="e85920abe34a4184988f078bd1e73279" category="sidebar">检查资源的模板合规性（偏差）</block>
-  <block id="441c6d31d8063270a27b242c68cc0e6e" category="sidebar">运行一个可查找现有资源的模板</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022 年 3 月 3 日</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
@@ -558,7 +544,6 @@
   <block id="ad47acd6a839d467d8e7d8cc0ab575bb" category="list-text">在 _Details_area 中，您可以选择卷名称，卷大小范围以及分配给卷的任何标记。</block>
   <block id="75aa65993e3f52840fc5b343dbb63651" category="paragraph">对于标记，您可以进一步缩小搜索范围，以便结果仅显示具有特定标记键 / 值对的卷。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中列出的第一个选项为支持</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
@@ -574,7 +559,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社区</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）</block>
   <block id="214a61ce436e46b661501acdeee5221c" category="paragraph">此时，偏移会标识资源中更改的参数—您必须手动调整资源，使其恢复与模板的合规性。将来，我们可以在资源不合规时向您发送通知，甚至可以反转用户的更改，以便从模板创建的所有资源自动恢复合规。</block>
   <block id="5bd5bf968b8be74cc15838b062223bc7" category="paragraph">此时、您需要手动进行调整、以使资源恢复与模板的合规性。 <block ref="070f7b254d8faecc6fc5a699202bdab9" category="inline-link-macro-rx"></block>。</block>
   <block id="cfd52dcb30bb7d2ea88bc2c66e2ccc0f" category="summary">通过BlueXP、您可以将标记应用于_exist_资源、以帮助组织和管理这些资源。标记是元数据，可用于对资源进行分组，以确定应用程序，环境，区域，计费代码，云提供商， 等等。</block>
@@ -621,7 +605,6 @@
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">搜索BlueXP知识库、查找有助于解决问题的文章。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">加入BlueXP社区、关注正在进行的讨论或创建新的讨论。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您当前正在查看的BlueXP文档。</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">我们非常重视您的反馈意见。提交反馈以帮助我们改进BlueXP。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服务*：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
@@ -644,8 +627,6 @@
   <block id="6d28d54ad9c4f6685bb752801088510b" category="summary">您可以使用BlueXP标记服务查看、添加、修改和删除分配给现有资源的标记。这样，您就可以组织和简化资源管理。</block>
   <block id="10b56653c6ddbf81d7d4419364238254" category="list-text">选择*运行状况&gt;修复*、然后单击*标记*选项卡。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXP通知</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">开始之前</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成后</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
@@ -701,7 +682,6 @@
   <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">偏移报告中的BlueXP复制运行状况详细信息</block>
   <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">使用模板在卷上启用BlueXP复制</block>
-  <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">通过BlueXP修复服务(AppTemplate)、您可以标准化BlueXP工作环境的资源创建。</block>
   <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">BlueXP修复文档</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="2603b912f5fde0329947b49c922b5a4d" category="summary">选择您的组织为创建针对特定工作负载和应用程序优化的工作环境或卷而构建的一个应用程序模板。此外、您还可以通过模板在卷或现有卷上激活BlueXP备份和恢复、BlueXP分类和BlueXP复制(SnapMirror)。</block>
@@ -757,8 +737,6 @@
   <block id="73d5b5afc4a2cdcc8daaa40ba4ef5910" category="list-text"><block ref="73d5b5afc4a2cdcc8daaa40ba4ef5910" category="inline-link-macro-rx"></block></block>
   <block id="c60b09ae2c96c9e21869de6d6df59453" category="sidebar">BlueXP修复文档</block>
   <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">使用BlueXP修复</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
-  <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">向卷添加备份、分类或复制功能</block>
   <block id="3c66700164b4cb085d6e086bf6b7d73b" category="paragraph">时间 <block ref="438903b5e6182d9d4cc41396268e5cbc" category="inline-link-macro-rx"></block>，您可以选择通过在 " 启用复制运行状况监控 " 字段中启用偏移来在偏移报告中显示更详细的复制信息。启用后、偏移报告将显示BlueXP复制关系的运行状况是运行状况良好还是运行状况不正常(偏移)、以及SnapMirror滞后时间、状态和上次传输时间。</block>
   <block id="8abfe8e6c06581937c37ec49be54c6d7" category="list-text">如果希望偏移报告包含 SnapMirror 关系的复制运行状况以及滞后时间，状态和上次传输时间，请启用复制运行状况监控。 <block ref="1eb00ed04881df5d17ae6b01acb7f8fb" category="inline-link-macro-rx"></block>。</block>
   <block id="8b6065ebfe1dc5ad36b1f573c520ca7b" category="list-text">激活<block ref="238f65d8124d9fce2c3e9e1c7b70b0d8" category="inline-link-rx"></block> 在卷上（不适用于 Azure NetApp Files ）</block>
@@ -857,4 +835,6 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp使用Microsoft Entra ID作为特定于支持和许可的身份验证服务的身份提供程序。</block>
+  <block id="5010faf2ce0072bc73496fec6f09f024" category="summary">通过BlueXP修复服务、您可以为BlueXP工作环境标准化资源创建。</block>
 </blocks>
